@@ -34,6 +34,7 @@ return {
         "nix",
         "json",
         "toml",
+        "rust",
       },
     },
   },
