@@ -41,17 +41,4 @@ return {
       },
     },
   },
-
-  -- inlay hints
-  {
-    "lvimuser/lsp-inlayhints.nvim",
-    init = function()
-      -- https://github.com/mrcjkb/rustaceanvim/discussions/46#discussioncomment-7636177
-      require("lsp-inlayhints").setup()
-      -- override the InlayHint color with onedark bg
-      vim.api.nvim_set_hl(0, "LspInlayHint", { fg = "", bg = "#1e222a" })
-      -- toggle
-      require("lsp-inlayhints").toggle()
-    end,
-  },
 }
