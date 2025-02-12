@@ -16,7 +16,10 @@ return {
     "hrsh7th/nvim-cmp",
     opts = function()
       local opts = require "nvchad.configs.cmp"
+      local cmp = require "cmp"
       -- I prefer not to select the first one (noselect)
+      -- see https://github.com/hrsh7th/nvim-cmp/discussions/1411#discussioncomment-4755441
+      opts.preselect = cmp.PreselectMode.None
       opts.completion.completeopt = "menu,menuone,noselect"
       return opts
     end,
