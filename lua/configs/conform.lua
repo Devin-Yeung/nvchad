@@ -7,6 +7,7 @@ local options = {
     json = { "prettier" },
     css = { "prettier" },
     html = { "prettier" },
+    scala = { "scalafmt "},
   },
 
   format_on_save = {
