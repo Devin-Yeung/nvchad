@@ -38,6 +38,9 @@ return {
       -- see https://github.com/hrsh7th/nvim-cmp/discussions/1411#discussioncomment-4755441
       opts.preselect = cmp.PreselectMode.None
       opts.completion.completeopt = "menu,menuone,noselect"
+      opts.experimental = opts.experimental or {
+        ghost_text = true,
+      }
       return opts
     end,
   },
