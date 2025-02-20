@@ -60,6 +60,11 @@ return {
   },
 
   {
+    "tpope/vim-surround",
+    lazy = false,
+  },
+
+  {
     "stevearc/oil.nvim",
     ---@module 'oil'
     ---@type oil.SetupOpts
